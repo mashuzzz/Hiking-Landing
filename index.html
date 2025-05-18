@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Веб-приложение для планирования походов с информацией и формой обратной связи">
+    <title>Планирование походов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="home">
+        <div class="container">
+            <div class="logo">Logo</div>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#landing" class="nav-link">Landing</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#team" class="nav-link">Our Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="landing">
+        <div class="container">
+            <h1 class="hero-title">Планируйте свой поход</h1>
+            <p class="hero-text">Исследуйте природу с нашими маршрутами и рекомендациями для незабываемых приключений.</p>
+            <div class="hero-buttons">
+                <a href="#faq" class="btn btn-outline">Посмотреть еще</a>
+                <a href="#contact" class="btn btn-primary">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <h2 class="faq-title">Часто задаваемые вопросы</h2>
+        <div class="faq-image" role="img" aria-label="Иллюстрация для FAQ"></div>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>Где найти национальные леса и бесплатные кемпинги?</summary>
+                <p>Бесплатные кемпинги доступны в большинстве национальных лесов США. Используйте карты Forest Service или сайты вроде Freecampsites.net для поиска мест.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Что нужно знать о кемпинге на парковках?</summary>
+                <p>Кемпинг на парковках (например, у Walmart) разрешен в некоторых местах, но требует разрешения владельца. Проверьте местные правила и убедитесь, что вы не мешаете другим.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Что такое дисперсный кемпинг?</summary>
+                <p>Дисперсный кемпинг — это кемпинг вне официальных площадок, часто в национальных лесах. Убедитесь, что вы следуете принципу "не оставлять следов".</p>
+            </details>
+            <details class="faq-item">
+                <summary>Где можно бесплатно разбить лагерь в национальных парках?</summary>
+                <p>Бесплатный кемпинг в национальных парках ограничен, но возможен в некоторых зонах за пределами официальных кемпингов. Проверьте правила парка на сайте NPS.</p>
+            </details>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about-title">О нас</h2>
+            <p class="about-text">Мы — команда энтузиастов, которые любят природу и помогают людям планировать незабываемые походы. Наша миссия — вдохновлять на приключения и делиться лучшими маршрутами по всему миру.</p>
+            <div class="about-images">
+                <img src="../travel/img/about-1.jpg" alt="Поход в горах" class="about-image">
+                <img src="../travel/img/about-2.jpg" alt="Кемпинг у озера" class="about-image">
+                <img src="../travel/img/about-3.jpeg" alt="Лесной пейзаж" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="team-title">Наша команда</h2>
+            <p class="team-text">Познакомьтесь с нашими экспертами: гиды, инструкторы и путешественники, которые знают всё о походах и готовы помочь вам в любом приключении.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="contact-title">Свяжитесь с нами</h2>
+        <div class="contact-content">
+            <div class="contact-text">
+                <p>Свяжитесь с нами, чтобы спланировать ваш идеальный поход! Мы поможем выбрать маршрут, подобрать снаряжение и ответим на все вопросы.</p>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="name" class="form-input" placeholder="Ваше имя" aria-label="Имя" required>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Ваш email" aria-label="Email" required>
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Ваше сообщение" aria-label="Сообщение" required></textarea>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
